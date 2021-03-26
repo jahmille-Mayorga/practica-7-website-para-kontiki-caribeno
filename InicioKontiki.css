@@ -1,0 +1,126 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    padding:0;
+    margin:0;/*Para que se acomode el contenido de toda la pagina bien*/
+    background-color:white;
+}
+header{
+    font-size:xx-large;
+    background-color:white;
+    color:#3c7334;
+    text-align:center;
+    padding:20px;/*Pixels are next to the content*/
+}
+header img{
+    /*width:747px Height:644px*/
+    width:37px;
+    height:32px;
+}
+.header{
+    color:white;
+    background-color:#d95c26;
+    font-size:xx-large;
+    padding:15px;
+    text-align:center;
+}
+nav{
+    padding: 10px 10px;
+    color:white;
+    background-color:#d95c26;
+    overflow:hidden;
+}
+nav a{
+    color:white;
+    background-color:#d95c26;
+    padding:20px;
+    font-size:xx-large;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#d95c26;
+    background-color:white;
+}
+
+#phone,#email,#facebook,#instagram{
+    align-content:center;
+    color:#3c7334;
+    font-size:125px;/*Fontawesome icons sizing work with font-size*/
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of
+   next to each other */
+ @media screen and (max-width:600px) {
+	.column {
+		width: 100%;
+	}
+}
+/**/
+.columnMedia:hover #phone,.columnMedia:hover #email,.columnMedia:hover #facebook,.columnMedia:hover #instagram { color: white; }
+
+#column0{
+    width:50%;
+    background-color:white;
+}
+.columnMedia{
+    float:left;/*In responsive design structures with this class piled up to the left side*/
+    padding:15px;/*Amount of pixels of difference between each column from above to aside*/
+    width:25%;
+    background-color:white;
+    align-content:center;
+}
+.column{
+    float:left;/*In responsive design structures with this class piled up to the left side*/
+    padding:15px;/*Amount of pixels of difference between each column from above to aside*/
+    width:33.33%;
+    background-color:white;
+    align-content:center;
+}
+#column0 h1,.column h1{
+    color:#3c7334;
+}
+#column0 p,.column p{
+    color:#d95c26;
+}
+.columnMedia:hover{
+    background-color:#3c7334;
+}
+.column img{
+    width: 410px;
+    height: 410px;
+    display: inline-block;
+    border-radius:15px;
+}
+
+
+.ColorPalette{
+    color:#2b3d29;
+    color:#ece7e3;
+    color:#c91727;
+    color:#0b9ca1;
+    color:#f2d51c;
+    color:#948538;
+    color:#d95c26;
+    color:#e5a255;
+    color:#e5a255;
+    color:#af445c;
+}
+.ColorPaletteShop{
+    color:#ca182a;
+    color:#faab07;
+    color:#3c7334;
+    color:#f0efe7;
+    color:#191919;
+
+}
+/*Color palette according to "image color picker"
+
+
+
+*/
