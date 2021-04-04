@@ -20,7 +20,7 @@ header img{
 }
 .header{
     color:white;
-    background-color:#d95c26;
+    background-color:#e5a255;
     font-size:xx-large;
     padding:15px;
     text-align:center;
@@ -48,7 +48,7 @@ nav a:hover{
     color:#3c7334;
     font-size:125px;/*Fontawesome icons sizing work with font-size*/
 }
-.row:after {
+.row2:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -98,7 +98,110 @@ nav a:hover{
     border-radius:15px;
 }
 
+/* Left and right column */
+.column.side {
+    width: 15%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 70%;
+    color:white;
+    background-color:#d95c26;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  
 
+input[type=text],input[type=email],select {
+    color:#d95c26;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#box label{
+    color:white;
+}
+#file{
+    color: transparent;
+  }
+#file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+#file::before {
+    content: 'Suba su curriculum';
+    color: #d95c26;
+    display: inline-block;
+    background-color:white;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+#file:hover::before {
+    border-color: #d95c26;
+}
+#file:active {
+    outline: 0;
+  }
+#file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+  }
+#file:hover{
+    background-color:#e5a255;
+    color:white;
+}
+
+#provincia{
+      width:20%;
+}
+
+input[type=submit]{
+      margin-top:5%;
+      margin-left:30%;
+      padding: 10px 20px;
+      font-size:xx-large;
+      background-color:white;
+      color:#e5a255;
+      border:none;
+      border-radius:10px;
+      display:inline-block;
+}
+input[type=submit]:hover{
+    background-color:#e5a255;
+    color:white;
+}
+.column2{
+  float: left;
+  width: 50%;
+  color:white;
+  background-color:#d95c26;
+}
+.column2 h1,.column2 p{
+  text-align: center;
+}
+  @media screen and (max-width: 600px) {
+    head,nav a,.columnMedia,.column.side, .column.middle,.column2 {
+      width: 100%;
+    }
+  }
 .ColorPalette{
     color:#2b3d29;
     color:#ece7e3;

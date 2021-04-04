@@ -8,8 +8,10 @@
     <title>Kontiki Caribeño Restaurant</title>
     <link rel="ico" href="imagenes pagina principal\favicon.ico"/>
     <link rel="stylesheet" href="InicioKontiki.css"/> 
-    <link rel="script" href="InicioKontiki.js"/>
+   
+   
 </head>
+
 <header>
     <img src="imagenes pagina principal\header logo.png"/>
     Kontiki Caribeño Restaurant
@@ -17,27 +19,14 @@
 <nav>
     <a href="#IndiceContacto">Contacto</a>
     <a href="#IndiceMenu">Menu</a>
-    <a href="#IndiceVision">Vision</a>
-    <a href="#IndiceMision">Mision</a>
-    <a href="oportunidad empleo\oportunidad de empleo.html" target="_blank">Oportunidades de empleo</a>
+    <a href="#Indicesion">Vision</a>
+    <a href="#Indicesion">Mision</a>
+    <a href="#IndicEmpleo">Oportunidades de empleo</a>
 </nav>
 <body>
     <section class="wrapper">
-        <div class="row" id="#IndiceContacto">
-            <div class="columnMedia">
-                <a href="https://www.facebook.com/kontikicr"target="_blank"><i id="facebook" class="fab fa-facebook-square"></i></a>
-            </div>
-            <div class="columnMedia">
-                <a href="mailto:carikon@hotmail.com"><i id="email" class="fas fa-envelope-square"></i></a>
-            </div>
-            <div class="columnMedia">
-                <a href="tel:506-2224-6848"><i id="phone" class="fas fa-phone-square"></i></a>
-            </div>
-            <div class="columnMedia">
-                <a href="https://www.instagram.com/kontikicaribe_cr/"target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
-            </div>
-        </div>
-        <div class="header" id="#IndiceMenu">Menu</div>
+        
+        <div class="header" id="IndiceMenu">Menu</div>
         <div class="row">
             <div class="column">
                 <img src="imagenes pagina principal\rice and beans tradicional.jpg"/>
@@ -60,7 +49,81 @@
                 <img src="imagenes pagina principal\pure de papa y pollo.jpg"/>
             </div>
         </div>
+        <div class="header" id="Indicecontacto">Contacto</div>
+        <div class="row">
+            <div class="columnMedia">
+                <a href="https://www.facebook.com/kontikicr"target="_blank"><i id="facebook" class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="columnMedia">
+                <a href="mailto:carikon@hotmail.com"><i id="email" class="fas fa-envelope-square"></i></a>
+            </div>
+            <div class="columnMedia">
+                <a href="tel:506-2224-6848"><i id="phone" class="fas fa-phone-square"></i></a>
+            </div>
+            <div class="columnMedia">
+                <a href="https://www.instagram.com/kontikicaribe_cr/"target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
+            </div>
+        </div>
+        <div class="header" id="Indicesion">Vision              Mision</div>
+        <!-- How to create a two column page: https://www.w3schools.com/howto/howto_css_two_columns.asp-->
+        <div class="row">
+            <div class="column2">
+                <h1>Vision</h1>
+                <p>
+                    Ser referente y ser lider de comida caribena en cualquiera </br>
+                    de sus sucursales,asi como ser la primera opcion de comida</br>
+                    caribena express.Transmitiendo nuestra pasion y cultura a las</br>
+                    personas que deseen degustar de nuestra comida.</br>
+
+
+                </p>
+            </div>
+            <div class="column2">
+                <h1>Mision</h1>
+                <p>
+                    Satisfacer las necesidades gastronómicas de nuestros clientes,</br>
+                    ofreciendo alimentos y servicioscon la más alta calidad, donde</br>
+                    se sobrepasen las expectativas de nuestros clientes y ser un</br>
+                    espacio de trabajo ameno para nuestros colaboradores.</br>
+                </p>
+            </div>
+        </div>
+        <div class="header" id="IndicEmpleo">Oportunidades de empleo</div>
+        <div class="row2">
+            <div class="column side"></div>
+            <div class="column middle">
+                
+                    <label>Nombre </label><input type="text" placeholder="Nombre" />
+                    <label>1er Apellido </label><input type="text" placeholder=" 1er apellido"/></br>
+                    <label>2do Apellido </label> <input type="text"placeholder="2do apellido"/>
+                    <label>Cedula </label><input type="text" placeholder="Cedula"/></br>
+                    <label>Correo </label><input type="email" placeholder="Correo"/>
+                    <label>Numero </label><input type="text" placeholder="Numero"/></br>
+                    <input type="file" id="file"/>
+                    <label>Puesto </label><select>
+                        <option value="mesero">Mesero</option>
+                        <option value="cocinero">Cocinero</option>
+                        <option value="cajero">Cajero</option>
+                    </select></br>
+                    <label>Provincia</label><select id="provincia" name="provincia" onchange="canton(this.id,'cantoncito')" >
+                        <option value=""></option>
+                        <option value="San Jose" >San Jose</option>
+                        <option value="Heredia">Heredia</option>
+                        <option value="Alajuela">Alajuela</option>
+                        <option value="Cartago">Cartago</option>
+                        <option value="Puntarenas">Puntarenas</option>
+                        <option value="Guanacaste">Guanacaste</option>
+                        <option value="Limon">Limon</option>
+                    </select>
+                    <label>Canton</label><select id="cantoncito" name="cantoncito" ></select>
+                    </br>
+                    
+                    <input type="submit" value="Enviar"></input>
+            </div>
+            <div class="column side"></div>
+        </div>
     </section>
-     
+    <script src="C:\Users\jahmi\OneDrive\Documentos\formacion personal\programacion web\curso de HTML\curso de html con falconmasters\practicas\practica 7 website para kontiki caribeno\InicioKontiki.js"></script>  
 </body>
+
 </html>
