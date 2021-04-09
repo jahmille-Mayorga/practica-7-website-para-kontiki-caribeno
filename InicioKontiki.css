@@ -197,11 +197,35 @@ input[type=submit]:hover{
 .column2 h1,.column2 p{
   text-align: center;
 }
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     head,nav a,.columnMedia,.column.side, .column.middle,.column2 {
       width: 100%;
     }
   }
+.right,.left{
+  background-color:#3c7334;
+  color:white;
+  border-radius:5px;
+}
+.left{
+  float:left;
+  margin-right:42%;
+}
+.right{
+  float:right;
+}
+.right:hover,.left:hover{
+  background-color:white;
+  color:#3c7334;
+  cursor:pointer;
+}
+.displayer{
+  background-color:#d95c26;
+  color:white;
+  float:left;
+  padding:2%;
+}
+
 .ColorPalette{
     color:#2b3d29;
     color:#ece7e3;

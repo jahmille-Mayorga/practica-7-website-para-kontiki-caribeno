@@ -53,3 +53,50 @@ function canton(s1,s2){
         s2.options.add(newOption);
     }
 }
+ /*
+https://fontawesome.com/icons/arrow-alt-square-right?style=solid
+https://fontawesome.com/icons/arrow-alt-square-left?style=solid 
+ */
+/*How to change an image 
+
+https://www.youtube.com/watch?v=xx4OG3epXso&ab_channel=TheWebShala
+*/
+
+
+//Si encuentra la forma que funcione, cambie los if-else por operador ternario:https://www.w3schools.com/js/js_comparisons.asp
+
+
+function changeRight(button,displayer,image){
+    var button=document.getElementById(button);
+    var displayer=document.getElementById(displayer);
+    var image=document.getElementById(image);
+    //https://www.w3schools.com/js/js_htmldom_html.asp
+    //https://stackoverflow.com/questions/45896997/how-to-compare-innerhtml-string-comparison-in-javascript
+
+    if(displayer.innerHTML=="1/3"){
+        displayer.innerHTML = "2/3";
+        image.src=(image.id=="riceandbeans")?"imagenes pagina principal\rice and beans con pollo.jpg":"imagenes pagina principal\patacones tradicionales 3.jpg";
+    }
+    else if((displayer.innerHTML!="3/3")&&(displayer.innerHTML!="1/3")){
+        displayer.innerHTML="3/3";
+        image.src=(image.id=="riceandbeans")?"imagenes pagina principal\rice and beans with shrimps.jpg":"imagenes pagina principal\patacones y pollo 2.jpg";
+    }
+    else{
+
+    }
+}
+function changeLeft(button,displayer,image){
+    var button=document.getElementById(button);
+    var displayer=document.getElementById(displayer);
+    var image=document.getElementById(image);
+    if(displayer.innerHTML=="3/3"){
+        displayer.innerHTML="2/3";
+        image.src=(image.id=="riceandbeans")?"imagenes pagina principal\rice and beans con pollo.jpg":"imagenes pagina principal\patacones tradicionales 3.jpg";
+    }
+    else if((displayer.innerHTML!="1/3")&&(displayer.innerHTML!="3/3")){
+        displayer.innerHTML="1/3";
+        image.src=(image.id=="riceandbeans")?"imagenes pagina principal\rice and beans tradicional.jpg":"imagenes pagina principal\patacones.jpg";
+    }
+}
+
+
